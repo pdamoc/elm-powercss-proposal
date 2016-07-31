@@ -9,7 +9,7 @@ to test the code, enter the proposal folder and `elm-package install -y && elm-m
 the method can be used currently with ports like by adding the following to your script and using `updateCss` like in proposal A. 
 
 
-```elm
+```javascript
       function createStyleElement(id, css){
         var style =document.createElement('style');
         style.type='text/css';
