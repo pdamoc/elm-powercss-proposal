@@ -6,7 +6,7 @@ inspiration: [PowerCSS](http://powercss.org/)
 
 to test the code, enter the proposal folder and `elm-package install -y && elm-make Main.elm`
 
-the method can be used currently with ports like by adding the following to your script and using `updateCss` like in proposal A. 
+the method can be used currently with ports by adding the following to your script and using `updateCss` like in proposal A. 
 
 
 ```javascript
