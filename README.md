@@ -1,6 +1,8 @@
 # elm-powercss-proposal
 
-Two proposals for a new way to do CSS. 
+Two proposals for a new way to mount a CSS stylesheet into an Elm app. 
+
+The CSS can be generated with a tool like [rtfeldman/elm-css](https://github.com/rtfeldman/elm-css).
 
 inspiration: [PowerCSS](http://powercss.org/)
 
