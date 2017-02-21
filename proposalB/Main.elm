@@ -3,7 +3,6 @@ module Main exposing (..)
 import Html exposing (..)
 import Html.Attributes exposing (id, class, classList)
 import Html.Events exposing (onClick)
-import Html.App as App
 import HeadHelpers exposing (withStyle)
 
 
@@ -67,7 +66,7 @@ view model =
                 ]
 
         boxes =
-            List.map (\i -> div [ class "elm-css-box_" ] [ text ("Elm CSS Box " ++ (toString i)) ]) [1..20]
+            List.map (\i -> div [ class "elm-css-box_" ] [ text ("Elm CSS Box " ++ (toString i)) ]) (List.range 1 20)
     in
         withStyle css out
 
@@ -94,9 +93,9 @@ body{display:block;margin:0;padding:2.5rem 2rem;background:#ddd;overflow-y:scrol
 -- WIRING
 
 
-main : Program Never
+main : Program Never Model Msg
 main =
-    App.beginnerProgram
+    Html.beginnerProgram
         { model = model
         , update = update
         , view = view
